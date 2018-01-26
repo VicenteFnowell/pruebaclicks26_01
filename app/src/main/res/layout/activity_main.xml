@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pruebaclicks26_01.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margingeneral"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pulsabotongoogle"
+                    style="@style/estilotexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/google" />
+
+                <ImageView
+                    android:id="@+id/botongoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="sobreescribirGO"
+                    app:srcCompat="@drawable/googleplus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margingeneral"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pulsainstagram"
+                    style="@style/estilotexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/instagram" />
+
+                <ImageView
+                    android:id="@+id/botoninstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="sobreescribirINS"
+                    app:srcCompat="@drawable/instagram" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margingeneral"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pulsafacebook"
+                    style="@style/estilotexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/facebook" />
+
+                <ImageView
+                    android:id="@+id/botonfacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="sobreescribirFB"
+
+                    app:srcCompat="@drawable/facebook" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margingeneral"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pulsatwitter"
+                    style="@style/estilotexto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/twitter" />
+
+                <ImageView
+                    android:id="@+id/botontwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="sobreescribirTW"
+                    app:srcCompat="@drawable/twitter" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margingeneral"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/botonborrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="limpiartodo"
+                    app:srcCompat="@drawable/error" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

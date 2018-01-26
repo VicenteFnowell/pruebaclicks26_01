@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<dimen name = "tamanotexto">25dp</dimen>
+<dimen name = "margingeneral">10dp</dimen>
+
+
+
+</resources>
